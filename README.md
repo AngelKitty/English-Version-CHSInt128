@@ -1,8 +1,8 @@
-# English-Version-CHSInt128
-An class of 128 bit long integers
+# English-Version-CHSInt128<br>
+An class of 128 bit long integers<br>
 
-这是一个关于int128的底层实现过程，包含了如下文件
-下面是文件列表：
+这是一个关于int128的底层实现过程，包含了如下文件<br>
+下面是文件列表：<br>
 ALU.cpp<br> 
 ALU.h<br> 
 Calc.clw<br> 
