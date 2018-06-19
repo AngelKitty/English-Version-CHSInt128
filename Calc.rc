@@ -1,0 +1,238 @@
+//Microsoft Developer Studio generated resource script. 
+// 
+#include "resource.h" 
+ 
+#define APSTUDIO_READONLY_SYMBOLS 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Generated from the TEXTINCLUDE 2 resource. 
+// 
+#include "afxres.h" 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+#undef APSTUDIO_READONLY_SYMBOLS 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// Chinese (P.R.C.) resources 
+ 
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS) 
+#ifdef _WIN32 
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED 
+#pragma code_page(936) 
+#endif //_WIN32 
+ 
+#ifdef APSTUDIO_INVOKED 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// TEXTINCLUDE 
+// 
+ 
+1 TEXTINCLUDE DISCARDABLE  
+BEGIN 
+    "resource.h\0" 
+END 
+ 
+2 TEXTINCLUDE DISCARDABLE  
+BEGIN 
+    "#include ""afxres.h""\r\n" 
+    "\0" 
+END 
+ 
+3 TEXTINCLUDE DISCARDABLE  
+BEGIN 
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n" 
+    "#define _AFX_NO_OLE_RESOURCES\r\n" 
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n" 
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n" 
+    "\r\n" 
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n" 
+    "#ifdef _WIN32\r\n" 
+    "LANGUAGE 9, 1\r\n" 
+    "#pragma code_page(1252)\r\n" 
+    "#endif //_WIN32\r\n" 
+    "#include ""res\\Calc.rc2""  // non-Microsoft Visual C++ edited resources\r\n" 
+    "#include ""afxres.rc""         // Standard components\r\n" 
+    "#endif\r\n" 
+    "\0" 
+END 
+ 
+#endif    // APSTUDIO_INVOKED 
+ 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Icon 
+// 
+ 
+// Icon with lowest ID value placed first to ensure application icon 
+// remains consistent on all systems. 
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon010.ico" 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Dialog 
+// 
+ 
+IDD_ABOUTBOX DIALOGEX 0, 0, 212, 103 
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU 
+CAPTION "About Calc" 
+FONT 9, "Verdana" 
+BEGIN 
+    DEFPUSHBUTTON   "OK",IDOK,165,8,40,13,WS_GROUP 
+    LTEXT           "\n       作者       : 韩 松\n\n       发布日期 : 02/10/01\n       邮箱地址 : hs_china@yahoo.com\n\n       作者声明 : 此部分代码全是作者所写，可以随\n                      便传播，但要保持文件的完整性,如\n                      果您有问题或有好的建议、意见请您\n                      给我来信,非常感谢 !\n", 
+                    IDC_STATIC,7,8,150,87,0,WS_EX_STATICEDGE 
+END 
+ 
+IDD_CALC_DIALOG DIALOGEX 0, 0, 200, 129 
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU 
+EXSTYLE WS_EX_APPWINDOW 
+CAPTION " 128位大整数类1.0 运算演示" 
+FONT 9, "Verdana" 
+BEGIN 
+    EDITTEXT        IDC_EDIT1,62,116,133,10,ES_CENTER | ES_AUTOHSCROLL |  
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE 
+    PUSHBUTTON      "0",IDC_NUM0,5,90,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "1",IDC_NUM1,5,70,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "2",IDC_NUM2,35,70,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "3",IDC_NUM3,65,70,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "4",IDC_NUM4,5,50,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "5",IDC_NUM5,35,50,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "6",IDC_NUM6,65,50,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "7",IDC_NUM7,5,30,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "8",IDC_NUM8,35,30,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "9",IDC_NUM9,65,30,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "+",IDC_ADD,95,30,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "-",IDC_SUB,95,50,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "*",IDC_MUL,95,70,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "/",IDC_DIV,95,90,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "%",IDC_MOD,65,90,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "+/-",IDC_FLAG,35,90,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "Max",IDC_MAX,125,30,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "Min",IDC_MIN,125,50,28,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "CE",IDC_CLEAR,155,30,40,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "Back",IDC_BACK,155,50,40,14,0,WS_EX_STATICEDGE 
+    PUSHBUTTON      "=",IDC_RESULT,155,90,40,14,0,WS_EX_STATICEDGE 
+    RTEXT           "0.",IDC_DISPLAY,5,10,190,10,0,WS_EX_STATICEDGE 
+    CONTROL         "",IDC_STATIC,"Static",SS_ENHMETAFILE,4,110,191,1, 
+                    WS_EX_STATICEDGE 
+END 
+ 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// DESIGNINFO 
+// 
+ 
+#ifdef APSTUDIO_INVOKED 
+GUIDELINES DESIGNINFO DISCARDABLE  
+BEGIN 
+    IDD_ABOUTBOX, DIALOG 
+    BEGIN 
+        LEFTMARGIN, 7 
+        RIGHTMARGIN, 205 
+        TOPMARGIN, 7 
+        BOTTOMMARGIN, 96 
+    END 
+ 
+    IDD_CALC_DIALOG, DIALOG 
+    BEGIN 
+        LEFTMARGIN, 5 
+        RIGHTMARGIN, 193 
+        TOPMARGIN, 7 
+        BOTTOMMARGIN, 122 
+    END 
+END 
+#endif    // APSTUDIO_INVOKED 
+ 
+#endif    // Chinese (P.R.C.) resources 
+///////////////////////////////////////////////////////////////////////////// 
+ 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// English (U.S.) resources 
+ 
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU) 
+#ifdef _WIN32 
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US 
+#pragma code_page(1252) 
+#endif //_WIN32 
+ 
+#ifndef _MAC 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Version 
+// 
+ 
+VS_VERSION_INFO VERSIONINFO 
+ FILEVERSION 1,0,0,1 
+ PRODUCTVERSION 1,0,0,1 
+ FILEFLAGSMASK 0x3fL 
+#ifdef _DEBUG 
+ FILEFLAGS 0x1L 
+#else 
+ FILEFLAGS 0x0L 
+#endif 
+ FILEOS 0x4L 
+ FILETYPE 0x1L 
+ FILESUBTYPE 0x0L 
+BEGIN 
+    BLOCK "StringFileInfo" 
+    BEGIN 
+        BLOCK "040904B0" 
+        BEGIN 
+            VALUE "CompanyName", "\0" 
+            VALUE "FileDescription", "Calc MFC Application\0" 
+            VALUE "FileVersion", "1, 0, 0, 1\0" 
+            VALUE "InternalName", "Calc\0" 
+            VALUE "LegalCopyright", "Copyright (C) 2002\0" 
+            VALUE "LegalTrademarks", "\0" 
+            VALUE "OriginalFilename", "Calc.EXE\0" 
+            VALUE "ProductName", "Calc Application\0" 
+            VALUE "ProductVersion", "1, 0, 0, 1\0" 
+        END 
+    END 
+    BLOCK "VarFileInfo" 
+    BEGIN 
+        VALUE "Translation", 0x409, 1200 
+    END 
+END 
+ 
+#endif    // !_MAC 
+ 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// String Table 
+// 
+ 
+STRINGTABLE DISCARDABLE  
+BEGIN 
+    IDS_ABOUTBOX            "&About Calc..." 
+END 
+ 
+#endif    // English (U.S.) resources 
+///////////////////////////////////////////////////////////////////////////// 
+ 
+ 
+ 
+#ifndef APSTUDIO_INVOKED 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Generated from the TEXTINCLUDE 3 resource. 
+// 
+#define _AFX_NO_SPLITTER_RESOURCES 
+#define _AFX_NO_OLE_RESOURCES 
+#define _AFX_NO_TRACKER_RESOURCES 
+#define _AFX_NO_PROPERTY_RESOURCES 
+ 
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU) 
+#ifdef _WIN32 
+LANGUAGE 9, 1 
+#pragma code_page(1252) 
+#endif //_WIN32 
+#include "res\Calc.rc2"  // non-Microsoft Visual C++ edited resources 
+#include "afxres.rc"         // Standard components 
+#endif 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+#endif    // not APSTUDIO_INVOKED 
